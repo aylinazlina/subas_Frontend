@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+
+
+/* todo:common css */
+
+.container{
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+
+@theme{
+   --color-gray_color:rgb(204, 204, 204);
+   --color-hovar_color:#ff7f00;
+
+
+
+
+   /*todo: font family */
+   --font-railway:"Raleway", sans-serif;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  outline:none;
+  box-sizing:border-box;
+
+}
+
+ ul,li,ol{
+   list-style:none;
+  
+  
+ }
+
+a{
+  text-decoration:none;
+}
+
+ img{
+   vertical-align: middle;
+ }
+
+
+
+ /* ====== todo: header ====== */
+
+ .user{
+   position:relative;
+   margin-left:5%;
+ }
+
+ .user::after{
+    position:absolute;
+    content:"";
+    width:2px;
+    height:25px;
+    background-color:var(--color-gray_color);
+    margin-left:20%;
+  
+
+    
+ }
+
+
+  .heart{
+   position:relative;
+   margin-left: 5%;
+   
+ }
+
+ .heart::after{
+    position:absolute;
+    content:"";
+    width:2px;
+    height:25px;
+    background-color:var(--color-gray_color);
+    margin-left:55%;
+    
+ }
+
+
+ .lock{
+    position:relative;
+    margin-left: 5%;
+ }
+
+ 
+ /* ====== todo: header ====== */
+
+
+
+ /* ========== navbar ====== */
+
+
+ .nItem{
+   position:relative
+ }
+
+ .nItem::after{
+  position:absolute;
+  content:"";
+  width:0%;
+  height:2px;
+  background-color:var(--color-hovar_color);
+  bottom:-5px;
+  left:0;
+  opacity:0;
+  transition:all .3s ease-in-out;
+
+ }
+
+ .nItem:hover::after{
+   opacity:1;
+   width:100%;
+ }
+
+
+ .search{
+   position:relative;
+   
+ }
+
+ .search ::after{
+   position:absolute;
+   content:"";
+   width:2px;
+   height:27px;
+   background-color:var(--color-hovar_color);
+  left:20px;
+  top:-2px;
+ }
+
+
+ /* ========== navbar ====== */
