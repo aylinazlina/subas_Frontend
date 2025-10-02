@@ -13,6 +13,7 @@
 @theme{
    --color-gray_color:rgb(204, 204, 204);
    --color-hovar_color:#ff7f00;
+  --color-footer_bg:#f6f6f6;
 
 
 
@@ -135,4 +136,72 @@ a{
  }
 
 
+ 
+
  /* ========== navbar ====== */
+
+
+
+
+ /* ======== footer ======== */
+
+
+.bar{
+   position:relative;
+}
+.bar::before{
+   position:absolute;
+   content:"";
+   width:2px;
+   height:20px;
+   background-color:var(--color-hovar_color);
+   left:-10px;
+   
+}
+
+.circle{
+  position:relative;
+}
+
+.circle::before{
+  position:absolute;
+  content:"";
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background-color:var(--color-hovar_color);
+  left:-15px;
+  top: 5px;
+
+}
+
+
+/* button */
+
+
+.button{
+  position:relative;
+  cursor:pointer;
+}
+.button::after{
+  position:absolute;
+  content:"";
+  width:0%;
+  background-color:rgba(0, 0, 0, 0.836);
+  height:2px;
+  bottom:0;
+  left:0;
+  opacity:0;
+  transition:all .3s ease-in-out;
+}
+
+
+.button:hover::after{
+
+  opacity:1;
+  width:100%;
+}
+/* button */
+
+
+ /* ======== footer ======== */
